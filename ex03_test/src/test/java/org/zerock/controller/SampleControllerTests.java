@@ -40,9 +40,9 @@ public class SampleControllerTests {
 	public void testConvert() throws Exception{
 		
 		Ticket ticket = new Ticket();
-		ticket.setTno(123);
-		ticket.setOwner("Admin");
-		ticket.setGrade("AAA");
+		ticket.setTno(999);
+		ticket.setOwner("Admin999");
+		ticket.setGrade("SSS");
 		
 		String jsonStr = new Gson().toJson(ticket);
 		
