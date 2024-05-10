@@ -43,7 +43,7 @@ public class BoardControllerTests {
 				.getModelMap());
 		
 	}
-	
+	//test
 		
 	//등록 처리와 테스트
 	@Test
