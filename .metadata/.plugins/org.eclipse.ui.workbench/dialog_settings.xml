@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="NewWizardAction">
+		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.wst.jsdt.ui.NewJSWizard"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.wst.jsdt.ui.java"/>
+		</list>
+	</section>
+	<section name="ImportExportAction">
+		<item key="ImportExportPage.STORE_SELECTED_EXPORT_WIZARD_ID" value="org.eclipse.ui.wizards.export.ZipFile"/>
+		<item key="ImportExportPage.STORE_SELECTED_IMPORT_WIZARD_ID" value="org.eclipse.egit.ui.internal.clone.GitCloneWizard"/>
+		<list key="ImportExportPage.STORE_EXPANDED_EXPORT_CATEGORIES">
+			<item value="org.eclipse.ui.Basic"/>
+		</list>
+		<list key="ImportExportPage.STORE_EXPANDED_IMPORT_CATEGORIES">
+			<item value="org.eclipse.ui.Basic"/>
+			<item value="org.eclipse.egit.ui.internal.clone.gitclonecategory"/>
+		</list>
+	</section>
+	<section name="ZipFileExportWizard">
+		<item key="WizardZipFileResourceExportPage1.STORE_CREATE_STRUCTURE_ID" value="true"/>
+		<item key="WizardZipFileResourceExportPage1.STORE_COMPRESS_CONTENTS_ID" value="true"/>
+		<list key="WizardZipFileResourceExportPage1.STORE_DESTINATION_NAMES_ID">
+			<item value="C:\00.MyWorks\BackUp\Part04\ex03_07_P435.zip"/>
+			<item value="C:\00.MyWorks\BackUp\Part04\ex03_06_P424.zip"/>
+			<item value="C:\00.MyWorks\BackUp\Part04\ex03_05_P418.zip"/>
+			<item value="C:\00.MyWorks\BackUp\Part04\ex03_07_P443_Part4완료.zip"/>
+			<item value="C:\00.MyWorks\BackUp\Part04\ex03_06_P435.zip"/>
+			<item value="C:\00.MyWorks\BackUp\Part04\ex03_05_P427.zip"/>
+			<item value="C:\00.MyWorks\BackUp\Part04\ex03_05_P414.zip"/>
+			<item value="C:\00.MyWorks\BackUp\Part04\ex03_04_P413.zip"/>
+			<item value="C:\00.MyWorks\BackUp\Part04\ex03_03_P398.zip"/>
+			<item value="C:\00.MyWorks\BackUp\Part04\ex03_P388.zip"/>
+			<item value="C:\00.MyWorks\BackUp\Part04\ex03_P374.zip"/>
+			<item value="C:\00.MyWorks\BackUp\ex02_형태소분석추가_크롤링추가.zip"/>
+			<item value="C:\Users\asmin\Desktop\이규훈 선생님 수업\NCS\20240430_18.텍스트 데이터 분석_이한성\소스코드.zip"/>
+			<item value="C:\00.MyWorks\ex02_09(검색처리)P350까지.zip"/>
+			<item value="C:\00.MyWorks\ex02_08(페이징화면처리)P324까지.zip"/>
+			<item value="C:\00.MyWorks\ex02_08(페이징01)P317까지.zip"/>
+			<item value="C:\00.MyWorks\ex02_07(페이징테스트)P301까지.zip"/>
+			<item value="C:\00.MyWorks\ex02_06(화면처리02)P267까지.zip"/>
+			<item value="C:\00.MyWorks\ex02_05(화면처리01)P258까지.zip"/>
+			<item value="C:\00.MyWorks\ex02_02(Controller계층)P222까지.zip"/>
+		</list>
+	</section>
+	<section name="ZipFileImportWizard">
+	</section>
+</section>
