@@ -2,6 +2,6 @@
 <typeInfoHistroy>
     <typeInfo handle="=ex03/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;org.zerock.service{ReplyService.java[ReplyService" modifiers="513" timestamp="1715662493183"/>
     <typeInfo handle="=ex04/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;org.zerock.service{SampleService.java[SampleService" modifiers="513" timestamp="1715986422264"/>
-    <typeInfo handle="=ex04/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;org.zerock.service{SampleTxService.java[SampleTxService" modifiers="513" timestamp="1715995944212"/>
-    <typeInfo handle="=ex04/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;org.zerock.mapper{Sample2Mapper.java[Sample2Mapper" modifiers="513" timestamp="1715994934830"/>
+    <typeInfo handle="=ex04/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;org.zerock.service{SampleTxService.java[SampleTxService" modifiers="513" timestamp="1715996002953"/>
+    <typeInfo handle="=ex04/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;org.zerock.mapper{Sample2Mapper.java[Sample2Mapper" modifiers="513" timestamp="1715996003957"/>
 </typeInfoHistroy>
