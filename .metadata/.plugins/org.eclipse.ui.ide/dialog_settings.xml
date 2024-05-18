@@ -98,17 +98,20 @@
 		<item value="org.springsource.sts:3.9.22.202204281230-RELEASE"/>
 	</list>
 	<section name="ExternalProjectImportWizard">
-		<item key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED" value="true"/>
+		<item key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED" value="false"/>
 		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
 		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
 		<item key="WizardProjectsImportPage.STORE_NESTED_PROJECTS" value="false"/>
 		<item key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID" value="false"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\00.MyWorks\Workspace\ex03"/>
+			<item value="C:\00.MyWorks\Workspace\ex04"/>
 			<item value=""/>
 			<item value="C:\00.MyWorks\Workspace\ex02"/>
 			<item value="C:\00.MyWorks\Workspace\ex02_P236"/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value=""/>
 			<item value="C:\00.MyWorks\BackUp\ex02_형태소분석추가_크롤링추가.zip"/>
 			<item value="C:\00.MyWorks\BackUp\Part01\ex00_part1완료.zip"/>
 			<item value="C:\00.MyWorks\BackUp\Part03\ex02_09(검색처리)P350까지.zip"/>

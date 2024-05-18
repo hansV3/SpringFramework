@@ -20,7 +20,7 @@ public class ReplyMapperTests {
 
 	
 	//테스트 전에 해당 번호의 게시물이 존재하는지 반드시 확인할 것
-	private Long[] bnoArr = { 15L, 16L, 17L, 18L, 19L };
+	private Long[] bnoArr = { 3097L, 3098L, 3099L, 3100L, 3101L };
 			
 	@Autowired
 	private ReplyMapper mapper;
