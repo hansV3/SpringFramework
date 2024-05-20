@@ -104,6 +104,7 @@
 		<item key="WizardProjectsImportPage.STORE_NESTED_PROJECTS" value="false"/>
 		<item key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID" value="false"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\00.MyWorks\Workspace\ex05"/>
 			<item value="C:\00.MyWorks\Workspace\ex03"/>
 			<item value="C:\00.MyWorks\Workspace\ex04"/>
 			<item value=""/>
