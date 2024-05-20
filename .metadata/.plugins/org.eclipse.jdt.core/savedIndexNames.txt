@@ -24,7 +24,6 @@ INDEX VERSION 1.131+C:\00.MyWorks\Workspace\.metadata\.plugins\org.eclipse.jdt.c
 4233985609.index
 1071936236.index
 1758166722.index
-2106131817.index
 1865797976.index
 1337536445.index
 4083361732.index
