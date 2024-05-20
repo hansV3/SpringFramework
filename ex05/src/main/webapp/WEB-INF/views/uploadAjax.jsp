@@ -5,6 +5,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
+
+
 </head>
 <body>
 
@@ -14,6 +16,29 @@
 		<input type = 'file' name='uploadFile' multiple>
 	</div>
 	
+	<style>
+	.uploadResult{
+		width:100%;
+		background-color: gray;
+	}
+	
+	.uploadResult ul{
+		display:flex;
+		flex-flow: row;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.uploadResult ul li {
+		list-style: none;
+		padding: 10px;
+	}
+	
+	.uploadResult ul li img{
+		width: 20px;
+	}
+</style>
+
 	<div class='uploadResult'>
 		<ul>
 			
@@ -103,7 +128,14 @@
 				var str ="";
 				
 				$(uploadResultArr).each(function(i,obj){
-					str += "<li>" + obj.fileName + "</li>";
+					
+					if(!obj.image){
+						str += "<li><img src='/resources/img/attach.png'>"
+						    + obj.fileName + "</li>";
+					}else{
+						str += "<li>" + obj.fileName + "</li>";
+					}
+					
 				});
 				
 				uploadResult.append(str);
