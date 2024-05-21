@@ -27,21 +27,21 @@ public class BoardServiceTests {
 	}
 	
 	
-	//?“±ë¡? ?‘?—…?˜ êµ¬í˜„ê³? ?…Œ?Š¤?Š¸
+	//ë“±ë¡ ì‘ì—…ì˜ êµ¬í˜„ê³¼ í…ŒìŠ¤íŠ¸
 	@Test
 	public void testRegister() {
 		BoardVO board = new BoardVO();
-		board.setTitle("?ƒˆë¡? ?‘?„±?•˜?Š” ê¸?");
-		board.setContent("?ƒˆë¡? ?‘?„±?•˜?Š” ?‚´?š©");
+		board.setTitle("ìƒˆë¡œ ì‘ì„±í•˜ëŠ” ê¸€");
+		board.setContent("ìƒˆë¡œ ì‘ì„±í•˜ëŠ” ë‚´ìš©");
 		board.setWriter("newbie");
 		
 		service.register(board);
 		
-		log.info("?ƒ?„±?œ ê²Œì‹œë¬? ë²ˆí˜¸: " + board.getBno());
+		log.info("ìƒì„±ëœ ê²Œì‹œë¬¼ ë²ˆí˜¸: " + board.getBno());
 	}
 	
 	
-	//ëª©ë¡(ë¦¬ìŠ¤?Š¸) ?‘?—…?˜ êµ¬í˜„ê³? ?…Œ?Š¤?Š¸
+	//ëª©ë¡(ë¦¬ìŠ¤íŠ¸) ì‘ì—…ì˜ êµ¬í˜„ê³¼ í…ŒìŠ¤íŠ¸
 	@Test
 	public void testGetList() {
 		
@@ -50,7 +50,7 @@ public class BoardServiceTests {
 	}
 	
 	
-	//ì¡°íšŒ ?‘?—…?˜ êµ¬í˜„ê³? ?…Œ?Š¤?Š¸
+	//ì¡°íšŒ ì‘ì—…ì˜ êµ¬í˜„ê³¼ í…ŒìŠ¤íŠ¸
 	@Test
 	public void testGet() {
 		
@@ -59,13 +59,13 @@ public class BoardServiceTests {
 	
 	
 	
-	//?‚­? œ/?ˆ˜? • êµ¬í˜„ê³? ?…Œ?Š¤?Š¸
+	//ì‚­ì œ/ìˆ˜ì • êµ¬í˜„ê³¼ í…ŒìŠ¤íŠ¸
 	@Test
 	public void testDelete() {
-		//ê²Œì‹œë¬? ë²ˆí˜¸?˜ ì¡´ì¬ ?—¬ë¶?ë¥? ?™•?¸?•˜ê³? ?…Œ?Š¤?Š¸ ?•  ê²?
+		//ê²Œì‹œë¬¼ ë²ˆí˜¸ì˜ ì¡´ì¬ ì—¬ë¶€ë¥¼ í™•ì¸í•˜ê³  í…ŒìŠ¤íŠ¸ í•  ê²ƒ
 		log.info("REMOVE: " + service.remove(2L));
 	}
-	//?‚­? œ/?ˆ˜? • êµ¬í˜„ê³? ?…Œ?Š¤?Š¸
+	//ì‚­ì œ/ìˆ˜ì • êµ¬í˜„ê³¼ í…ŒìŠ¤íŠ¸
 	@Test
 	public void testUpdate() {
 		BoardVO board = service.get(1L);
@@ -74,7 +74,7 @@ public class BoardServiceTests {
 			return;
 		}
 		
-		board.setTitle("? œëª? ?ˆ˜? •?•©?‹ˆ?‹¤.");
+		board.setTitle("ì œëª© ìˆ˜ì •í•©ë‹ˆë‹¤.");
 		log.info("MODIFY RESULT: " + service.modify(board));
 	}
 	

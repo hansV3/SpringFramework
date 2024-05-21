@@ -19,8 +19,8 @@ import lombok.extern.log4j.Log4j;
 public class ReplyMapperTests {
 
 	
-	//?…Œ?Š¤?Š¸ ? „?— ?•´?‹¹ ë²ˆí˜¸?˜ ê²Œì‹œë¬¼ì´ ì¡´ì¬?•˜?Š”ì§? ë°˜ë“œ?‹œ ?™•?¸?•  ê²?
-	private Long[] bnoArr = { 3097L, 3098L, 3099L, 3100L, 3101L };
+	//í…ŒìŠ¤íŠ¸ ì „ì— í•´ë‹¹ ë²ˆí˜¸ì˜ ê²Œì‹œë¬¼ì´ ì¡´ì¬í•˜ëŠ”ì§€ ë°˜ë“œì‹œ í™•ì¸í•  ê²ƒ
+	private Long[] bnoArr = { 15L, 16L, 17L, 18L, 19L };
 			
 	@Autowired
 	private ReplyMapper mapper;
@@ -35,7 +35,7 @@ public class ReplyMapperTests {
 			
 			//ê²Œì‹œë¬¼ì˜ ë²ˆí˜¸
 			vo.setBno(bnoArr[i % 5]);
-			vo.setReply("?Œ“ê¸? ?…Œ?Š¤?Š¸" + i);
+			vo.setReply("ëŒ“ê¸€ í…ŒìŠ¤íŠ¸" + i);
 			vo.setReplyer("replyer" + i);
 			
 			mapper.insert(vo);

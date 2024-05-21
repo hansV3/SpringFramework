@@ -15,7 +15,7 @@ import org.springframework.web.context.WebApplicationContext;
 import lombok.extern.log4j.Log4j;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@WebAppConfiguration //Servlet?˜ ServletContextë¥? ?´?š©?•˜ê¸? ?œ„?•´?„œ ?Š¤?”„ë§ì—?„œ?Š” WebApplicationContext ?´?š©?•˜ê¸°ìœ„?•´
+@WebAppConfiguration //Servletì˜ ServletContextë¥¼ ì´ìš©í•˜ê¸° ìœ„í•´ì„œ ìŠ¤í”„ë§ì—ì„œëŠ” WebApplicationContext ì´ìš©í•˜ê¸°ìœ„í•´
 @ContextConfiguration({"file:src/main/webapp/WEB-INF/spring/root-context.xml",
 		"file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml"})
 @Log4j
@@ -32,7 +32,7 @@ public class BoardControllerTests {
 	}
 		
 	
-	//ëª©ë¡?— ???•œ ì²˜ë¦¬?? ?…Œ?Š¤?Š¸
+	//ëª©ë¡ì— ëŒ€í•œ ì²˜ë¦¬ì™€ í…ŒìŠ¤íŠ¸
 	@Test
 	public void testList() throws Exception{
 		
@@ -45,13 +45,13 @@ public class BoardControllerTests {
 	}
 	
 		
-	//?“±ë¡? ì²˜ë¦¬?? ?…Œ?Š¤?Š¸
+	//ë“±ë¡ ì²˜ë¦¬ì™€ í…ŒìŠ¤íŠ¸
 	@Test
 	public void testRegister() throws Exception{
 		
 		String resultPage = mockMvc.perform(MockMvcRequestBuilders.post("/board/register")
-				.param("title", "?…Œ?Š¤?Š¸ ?ƒˆê¸? ? œëª?")
-				.param("content","?…Œ?Š¤?Š¸ ?ƒˆê¸? ?‚´?š©")
+				.param("title", "í…ŒìŠ¤íŠ¸ ìƒˆê¸€ ì œëª©")
+				.param("content","í…ŒìŠ¤íŠ¸ ìƒˆê¸€ ë‚´ìš©")
 				.param("writer","user00"))
 				.andReturn().getModelAndView().getViewName();
 		
@@ -60,7 +60,7 @@ public class BoardControllerTests {
 	}
 	
 	
-	//ì¡°íšŒ ì²˜ë¦¬?? ?…Œ?Š¤?Š¸
+	//ì¡°íšŒ ì²˜ë¦¬ì™€ í…ŒìŠ¤íŠ¸
 	@Test
 	public void testGet() throws Exception{
 		
@@ -72,15 +72,15 @@ public class BoardControllerTests {
 	}
 	
 	
-	//?ˆ˜? • ì²˜ë¦¬?? ?…Œ?Š¤?Š¸
+	//ìˆ˜ì • ì²˜ë¦¬ì™€ í…ŒìŠ¤íŠ¸
 	@Test
 	public void testModify() throws Exception{
 		
 		String resultPage = mockMvc
 				.perform(MockMvcRequestBuilders.post("/board/modify")
 				.param("bno", "1")
-				.param("title","?ˆ˜? •?œ ?…Œ?Š¤?Š¸ ?ƒˆê¸? ? œëª?")
-				.param("content","?ˆ˜? •?œ ?…Œ?Š¤?Š¸ ?ƒˆê¸? ?‚´?š©")
+				.param("title","ìˆ˜ì •ëœ í…ŒìŠ¤íŠ¸ ìƒˆê¸€ ì œëª©")
+				.param("content","ìˆ˜ì •ëœ í…ŒìŠ¤íŠ¸ ìƒˆê¸€ ë‚´ìš©")
 				.param("writer","user00"))
 				.andReturn().getModelAndView().getViewName();
 		
@@ -88,10 +88,10 @@ public class BoardControllerTests {
 	}
 		
 	
-	//?‚­? œ ì²˜ë¦¬?? ?…Œ?Š¤?Š¸
+	//ì‚­ì œ ì²˜ë¦¬ì™€ í…ŒìŠ¤íŠ¸
 	@Test
 	public void testRemove() throws Exception {
-		//?‚­? œ? „ ?°?´?„°ë² ì´?Š¤?— ê²Œì‹œë¬? ë²ˆí˜¸ ?™•?¸?•  ê²?
+		//ì‚­ì œì „ ë°ì´í„°ë² ì´ìŠ¤ì— ê²Œì‹œë¬¼ ë²ˆí˜¸ í™•ì¸í•  ê²ƒ
 		String resultPage = mockMvc.perform(MockMvcRequestBuilders.post("/board/remove")
 				.param("bno","5"))
 				.andReturn().getModelAndView().getViewName();

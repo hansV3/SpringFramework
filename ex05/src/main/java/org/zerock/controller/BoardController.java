@@ -51,12 +51,28 @@ public class BoardController {
 	@PostMapping("/register")
 	public String register(BoardVO board, RedirectAttributes rttr) {
 		
+		log.info("================================");
 		log.info("register: " + board);
-		if(board.getBno() != null) {
-		service.register(board);
 		
-		rttr.addFlashAttribute("result",board.getBno());
+		if(board.getAttachList() != null) {
+			
+			board.getAttachList().forEach(attach -> log.info(attach));
+			
 		}
+		
+		log.info("================================");
+		//if(board.getBno() != null) {
+		//service.register(board);
+		
+		//rttr.addFlashAttribute("result",board.getBno());
+		//}
+		
+		
+		service.register(board);
+		rttr.addFlashAttribute("result",board.getBno());
+		
+		
+		
 		//addFlashAttribute : 데이터를 넘기는 메소드, addAttribute()는 브라우저의 주소창 URL에 보이게 넘기고
 		//addFlashAttribute는 주소창에 표기되지 않는다. 세션에 저장되어 사용된 뒤에 자동으로 삭제된다.
 		return "redirect:/board/list";
