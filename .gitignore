@@ -1,9 +1,6 @@
 /.metadata/
 Servers/
-.metadata/
 
-Servers
-.metadata
 bin/
 tmp/
 *.tmp
