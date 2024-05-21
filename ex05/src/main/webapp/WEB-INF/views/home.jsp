@@ -12,5 +12,7 @@
 </h1>
 
 <P>  The time on the server is ${serverTime}. </P>
+<hr>
+<a href="/board/list">board/list</a>
 </body>
 </html>
