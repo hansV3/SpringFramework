@@ -74,6 +74,8 @@ public class BoardServiceImpl implements BoardService {
 		
 		log.info("remove.............." + bno);
 		
+		attachMapper.deleteAll(bno);
+		
 		return mapper.delete(bno)==1;
 	}
 
