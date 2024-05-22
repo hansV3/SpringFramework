@@ -342,11 +342,9 @@
 		});
 		
 		function showImage(fileCallPath){
-			alert(fileCallPath);
+			//alert(fileCallPath);
 			
 			$(".bigPictureWrapper").css("display","flex").show();
-			
-			
 			$(".bigPicture").html("<img src='/display?fileName="+fileCallPath+"'>").animate({width:'100%', height: '100%'}, 1000);
 			
 		}
@@ -540,7 +538,7 @@ $(document).ready(function(){
 	background-color: gray;
 }
 .uploadResult ul{
-	dispaly:flex;
+	display:flex;
 	flex-flow:row;
 	justify-content: center;
 	align-items: center;
@@ -549,7 +547,8 @@ $(document).ready(function(){
 	list-style: none;
 	padding: 10px;
 	align-content: center;
-	text-align: center;
+	text-align: center;	
+	
 }
 .uploadResult ul li img{
 	width: 100px;

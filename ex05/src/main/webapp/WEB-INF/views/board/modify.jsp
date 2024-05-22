@@ -308,7 +308,7 @@ $(document).ready(function(){
 	background-color: gray;
 }
 .uploadResult ul{
-	dispaly:flex;
+	display:flex;
 	flex-flow:row;
 	justify-content: center;
 	align-items: center;
