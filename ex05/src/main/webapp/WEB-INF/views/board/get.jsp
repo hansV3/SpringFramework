@@ -9,10 +9,12 @@
 <script type="text/javascript" src="/resources/js/reply.js"></script>
 
 
+
 <script>
 	$(document).ready(function(){
 		
 		var bnoValue = '<c:out value="${board.bno}"/>';
+		
 		var replyUL = $(".chat");
 		
 		showList(1);
@@ -275,20 +277,31 @@
 			
 		});
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+
 		
 	});
 
 </script>
+
+
+
+<script>
+
+	$(document).ready(function(){
+		(function(){
+			var bno = '<c:out value="${board.bno}"/>';
+		
+			$.getJSON("/board/getAttachList", {bno:bno}, function(arr){
+				
+				console.log(arr);
+				
+			});//end getjson
+		
+		})();//end function
+	});
+</script>
+
+
 
 <script>
 	/* console.log(replyService);
