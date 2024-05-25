@@ -193,6 +193,11 @@
 		});
 		
 		
+		//Ajax Spring security header ...
+		$(document).ajaxSend(function(e, xhr, options){
+			xhr.setRequestHeader(csrHeaderName, csrfTokenValue);
+		});
+		
 		
 		modalRegisterBtn.on("click", function(e){
 			
@@ -271,7 +276,27 @@
 			
 			var rno = modal.data("rno");
 			
-			replyService.remove(rno, function(result){
+			console.log("RNO: " + rno);
+			console.log("REPLYEER: "+ replyer);
+			
+			if(!replyer){
+				alert("로그인후 삭제가 가능합니다.");
+				modal.modal("hide");
+				return;
+			}
+			
+			var originalReplyer = modalInputReplyer.val();
+			
+			console.log("Original Replyer: " + originalReplyer); //댓글의 원래 작성자
+			
+			if(replyer != originalReplyer){
+				
+				alert("자신이 작성한 댓글만 삭제가 가능합니다.");
+				modal.modal("hide");
+				return;
+			}
+			
+			replyService.remove(rno, originalReplyer, function(result){
 				
 				alert(result);
 				modal.modal("hide");
