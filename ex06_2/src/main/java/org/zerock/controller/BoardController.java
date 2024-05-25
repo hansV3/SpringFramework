@@ -101,7 +101,7 @@ public class BoardController {
 	}
 	
 	
-	//수정 처리와 테스트
+	@PreAuthorize("principal.username == #board.writer")
 	@PostMapping("/modify")
 	public String modify(BoardVO board, @ModelAttribute("cri") Criteria cri, RedirectAttributes rttr) {
 		
@@ -124,8 +124,8 @@ public class BoardController {
 	}
 	
 	
-	//삭제 처리와 테스트
-	@PostMapping("/remove")
+	@PreAuthorize("principal.username == #writer")
+	@PostMapping("/remove") 
 	public String remove(@RequestParam("bno") Long bno, @ModelAttribute("cri") Criteria cri, RedirectAttributes rttr) {
 		
 		log.info("remove..." + bno);
