@@ -165,12 +165,24 @@
 		var modalRemoveBtn = $("#modalRemoveBtn");
 		var modalRegisterBtn = $("#modalRegisterBtn");
 		
+		var replyer = null;
+		
+		<sec:authorize access="isAuthenticated()" >
+		
+			replyer = '<sec:authentication property="principal.username"/>';
+		
+		</sec:authorize>
+		
+			var csrfHeaderName = "${_csrf.headerName}";
+			var csrfTokenValue = "${_csrf.token}";
+		
 		//Reply Modal에 있는 Close 버튼 이벤트 추가
 		var modalCloseBtn = $("#modalCloseBtn");
 		
 		$("#addReplyBtn").on("click", function(e){
 			
 			modal.find("input").val("");
+			modal.find("input[name='replyer']").val(replyer);
 			modalInputReplyDate.closest("div").hide();
 			modal.find("button[id != 'modalCloseBtn']").hide();
 			
