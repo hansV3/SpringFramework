@@ -106,16 +106,19 @@ public class ReplyController {
 	}
 	
 	
-	
+	@PreAuthorize("principal.username == #vo.replyer")
+//	@RequestMapping(method = { RequestMethod.PUT, RequestMethod.PATCH},
+//			value = "/{rno}",
+//			consumes = "application/json",
+//			produces = { MediaType.TEXT_PLAIN_VALUE})
 	@RequestMapping(method = { RequestMethod.PUT, RequestMethod.PATCH},
-			value = "/{rno}",
-			consumes = "application/json",
-			produces = { MediaType.TEXT_PLAIN_VALUE})
+					value = "/{rno}",
+					consumes = "application/json")
 	public ResponseEntity<String> modify(
 			@RequestBody ReplyVO vo,
 			@PathVariable("rno") Long rno) {
 		
-		vo.setRno(rno);
+		//vo.setRno(rno);
 		
 		log.info("rno: " + rno);
 		
